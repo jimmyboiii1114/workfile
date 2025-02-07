@@ -33,7 +33,7 @@
             background-color: #d63384;
         }
         .soobin {
-            display: none;
+            display: none; /* Hide images initially */
             margin-top: 20px;
             width: 200px;
             height: auto;
@@ -59,7 +59,8 @@
             document.getElementById("question").classList.remove("hidden");
         }
         function showSoobin(response) {
-          console.log("Response":,response);
+            console.log("Response:", response); // Fixed console log syntax
+
             if (response === 'yes') {
                 document.getElementById("soobin-smiling").style.display = "block";
                 document.getElementById("soobin-crying").style.display = "none";
